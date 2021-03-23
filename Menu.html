@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Menu.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <title>DanBam Resto</title>
 </head>
 
@@ -27,11 +32,45 @@
     <div class="navnav">
         <nav>
             <ul class="menu-lits">
-                <li class="item"><a href=""><b>Food</b></a></li>
-                <li class="item"><a href=""><b>Drink</b></a></li>
-                <li class="item"><a href=""><b>Desserts</b></a></li>
+                <li class="item"><a href="#Food"><b>Food</b></a></li>
+                <li class="item"><a href="#Drink"><b>Drink</b></a></li>
+                <li class="item"><a href="#SideDish"><b>Desserts</b></a></li>
             </ul>
         </nav>
+        <div class="Food" id="Food">
+            <div class="slider-outer">
+              <img src="images/arrow-left.png" class="prev" alt="Prev">
+              <div class="slider-inner">
+                <img src="images/image1.jpg" class="active">
+                <img src="images/image2.jpg">
+                <img src="images/image3.jpg">
+                <img src="images/image4.jpg">
+              </div>
+              <img src="images/arrow-right.png" class="next" alt="Next">
+            </div>
+          </div>
     </div>
+    <div class="Drink" id="Drink">
+        <div class="slider-outer">
+          <img src="images/arrow-left.png" class="prev" alt="Prev">
+          <div class="slider-inner">
+            <img src="images/image5.jpg" class="active">
+            <img src="images/image6.jpg">
+            <img src="images/image7.jpg">
+          </div>
+          <img src="images/arrow-right.png" class="next" alt="Next">
+        </div>
+      </div>
+      <div class="SideDish" id="SideDish">
+        <div class="slider-outer">
+          <img src="images/arrow-left.png" class="prev" alt="Prev">
+          <div class="slider-inner">
+            <img src="images/image8.jpg" class="active">
+            <img src="images/image9.jpg">
+            <img src="images/image10.jpg">
+          </div>
+          <img src="images/arrow-right.png" class="next" alt="Next">
+        </div>
+      </div>
 </body>
 </html>
