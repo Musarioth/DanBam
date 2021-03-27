@@ -22,6 +22,10 @@ li a {
     padding: 0.5em;
 }
 
+li a :hover{
+    text-decoration: underline;
+}
+
 .navnav {
     background-color: black;
 }
@@ -100,11 +104,51 @@ header {
 footer {
     background: black;
     color: white;
-    text-align: center;
 }
 
 .contact {
     padding: 1em;
+}
+
+.Contact_Us {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    float: left;
+}
+
+.Contact_Us h1 {
+    text-align: center;
+    font-size: 4em;
+}
+  
+.Contact_Us form {
+    padding-left: 6em;
+}
+  
+.Contact_Us input {
+    /* padding-left: 80%; */
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+  
+.box {
+    width: 30%;
+}
+
+.Submit {
+    background-color: white;
+}
+
+.Logos {
+    background-color: black;
+    margin-left: 50%;
+}
+
+.Logos img{
+    width: 80%;
 }
 
 @media only screen and (min-width:1020px) {
