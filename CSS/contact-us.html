@@ -1,77 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Logo.ico">
-    <link rel="stylesheet" href="../CSS/contact-us.css">
-    <title>Contact Us</title>
-</head>
-<body>
-    <div class="wrapper">
-        <h1>Contact Us</h1>
-        <form action="">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Gender</label>
-                </div>
-                <div class="col-75">
-                    <select id="" name="country">
-                        <option value="">Select</option>
-                        <option value="">Male</option>
-                        <option value="">Female</option>
-                    </select>
-                </div>
-            </div>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Assets/Header.jpg);
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Location</label>
-                </div>
-                <div class="col-75">
-                    <select id="" name="country">
-                        <option value="">Select</option>
-                        <option value="">33-1 Tojeong-ro, Hapjeong-dong, Mapo-gu, Seoul, South Korea</option>
-                        <option value="">43 Sinheung-ro 20-gil, Huam-dong, Yongsan-gu, Seoul, South Korea</option>
-                        <option value="">43 16 Jahamun-ro, Jongno-gu, Seoul, South Korea</option>
-                        <option value="">Jl. Kelapa Sawit Raya Blok BF 1 No. 18 Ruko Opal Gading Serpong, Tangerang, Banten</option>
-                    </select>
-                </div>
-            </div>
+.wrapper {
+    width: 30%;
+    color: black;
+    background-color: white;
+    padding: 2em;
+}
 
-            <div class="row">
-                <div class="col-25">
-                <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-            </div>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 4px;
+    resize: vertical;
+}
 
-            <!-- <a href="home.html"><input type="submit" value="Submit" class="submit"></a> <br> -->
-            <a href="home.html" class="submit-button">Submit</a> 
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
 
+.submit-button {
+    margin-top: 1em;
+    background-color: #aa04aa;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+}
 
-        </form>
-      </div>
-</body>
-</html>
+.submit-button:hover {
+    background-color: #8f418f;
+    text-decoration: underline;
+}
+
+.wrapper {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding-top: 20%;
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
